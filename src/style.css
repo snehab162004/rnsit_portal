@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    /* background-color: #A45C40; */
+    background-color: #4e0505;
+    padding: 1.1rem;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1rem;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-weight: bold;   */
+    letter-spacing: 1.2px;
+    line-height: 1.8px;
+}
+
+
+
+
+
+
