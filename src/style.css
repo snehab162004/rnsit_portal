@@ -8,13 +8,18 @@
     box-sizing: border-box;
 }
 
+/* body{
+    background-color: rgb(79, 5, 5);
+
+} */
+
 header{
     /* background-color: #A45C40; */
-    background-color: #4e0505;
+    background-color: rgb(79, 5, 5);
     padding: 1.1rem;
     text-align: center;
     color: whitesmoke;
-    font-size: 1rem;
+    font-size: 1.2rem;
     /* font-family: 'Courier New', Courier, monospace; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* font-weight: bold;   */

@@ -5,29 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RNSIT IA MARKS PORTAL</title>
     <link rel="stylesheet" href="./public/output.css">
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <header class="sm:text-sm sm:leading-3">
+    <header class="sm:text-sm sm:leading-3 text-2xl">
         RNSIT 5th SEM STUDENTS IA MARKS PORTAL</header>
-        <nav class="bg-white shadow-white stroke-width=1.5">
-            
-            <div class="logo">
-                <img src="images\rnsit_logo.jpeg" alt="rnsit_logo" class="sm:h-13 w-1/12">
+
+        <nav class="bg-white shadow p-4 md:flex md:justify-between md:items-center">
+            <div class="logo sm:ml-2.5 flex justify-between items-center">
+                <span class="text-2xl cursor-pointer font-semibold text-amber-950">
+                <img src="images\rnsit_logo.jpeg" alt="rnsit_logo" class="sm:h-13 h-20 w-21 inline">
+                RNSIT
+            </span>
+            <span class="text-3xl cursor-pointer md:hidden block mx-2">
+                <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+            </span>
            </div>
-            <h3 class="logo_text  text-amber-950 font-semibold">
-                RNSIT</h3>
-                <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                    <span class="absolute -inset-0.5"></span>
-            <div class="text-amber-950 font-semibold text-right sm:block">
-                <div class="space-x-4">
-                <a href="#">Home</a>
-                <a href="#">Faculty Login</a>
-                <a href="#">Student Login</a>
-                <a href="#">Help</a>
+                <ul class="text-amber-950 font-semibold md:flex md:items-center z-[-1] md:z-auto md:static absolute
+                w-full left-0 md:auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] 
+                transition-all ease-in duration-500">
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="text-xl hover:underline duration-500">
+                                Home</a>
+                        </li>
+                            <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="text-xl hover:underline duration-500">
+                                Faculty Login</a></li>
+                           <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="text-xl hover:underline duration-500">
+                                Student Login</a>
+                           </li> 
+                           <li class="mx-4 my-6 md:my-0">
+                             <a href="#" class="text-xl hover:underline duration-50">
+                                Help</a>
+                        </li>
+                    </ul>
             </div>
             </div>
         
         </nav>
+
+        <script src="index.js"></script>
 </body>
 </html>
