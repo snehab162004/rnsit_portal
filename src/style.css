@@ -8,27 +8,55 @@
     box-sizing: border-box;
 }
 
-/* body{
-    background-color: rgb(79, 5, 5);
 
-} */
+
 
 header{
-    /* background-color: #A45C40; */
-    background-color: rgb(79, 5, 5);
+    background-color: #e7929d;
     padding: 1.1rem;
     text-align: center;
-    color: whitesmoke;
-    font-size: 1.2rem;
-    /* font-family: 'Courier New', Courier, monospace; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* font-weight: bold;   */
-    letter-spacing: 1.2px;
-    line-height: 1.8px;
+    color: #242944;
+    font-weight: bold;  
+    letter-spacing: 1px;
+    line-height: 1rem;
+}
+body{
+    background-color: #242944;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
+.carousel-img {
+    display: flex;
+ overflow: hidden;
+ position: relative;
+ /* margin: 8rem 20rem; */
+}
+.slide {
+    flex-shrink: 0;
+    width: 130%;
+    height: 400px;
+    object-fit: cover;
+    
+   }
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+   }
+   
+   .prev {
+    left: 20px;
+   }
+   
+   .next {
+    right: 20px;
+   }
 
-
-
-
-
+  

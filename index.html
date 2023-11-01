@@ -5,26 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RNSIT IA MARKS PORTAL</title>
     <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="./src/style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="sm:text-sm sm:leading-3 text-2xl">
+    <header class="sm:text-sm sm:leading-5 text-4xl">
         RNSIT 5th SEM STUDENTS IA MARKS PORTAL</header>
 
-        <nav class="bg-white shadow p-4 md:flex md:justify-between md:items-center">
+        <nav class="bg-white h-24 shadow p-4 md:flex md:justify-between md:items-center w-full">
             <div class="logo sm:ml-2.5 flex justify-between items-center">
-                <span class="text-2xl cursor-pointer font-semibold text-amber-950">
-                <img src="images\rnsit_logo.jpeg" alt="rnsit_logo" class="sm:h-13 h-20 w-21 inline">
+                <span class="text-2xl cursor-pointer font-semibold text-[#242944]">
+                <img src="./images/rnsit_logo.jpeg" alt="rnsit_logo" class="sm:h-13 h-20 w-21 inline">
                 RNSIT
             </span>
             <span class="text-3xl cursor-pointer md:hidden block mx-2">
                 <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
             </span>
            </div>
-                <ul class="text-amber-950 font-semibold md:flex md:items-center z-[-1] md:z-auto md:static absolute
-                w-full left-0 md:auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] 
-                transition-all ease-in duration-500">
+                <ul class="font-semibold md:flex md:items-center z-[-1] md:z-auto md:static absolute
+                 left-0 md:auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] 
+                transition-all ease-in duration-500 bg-white">  
                         <li class="mx-4 my-6 md:my-0">
                             <a href="#" class="text-xl hover:underline duration-500">
                                 Home</a>
@@ -37,7 +39,7 @@
                                 Student Login</a>
                            </li> 
                            <li class="mx-4 my-6 md:my-0">
-                             <a href="#" class="text-xl hover:underline duration-50">
+                             <a href="#" class="text-xl hover:underline transition-all ease-in-out out duration-50">
                                 Help</a>
                         </li>
                     </ul>
@@ -45,6 +47,75 @@
             </div>
         
         </nav>
+        <section>
+            <div class="carousel">
+                <button class="carousel-button prev"><</button>
+                <button class="carousel-button next">></button>
+                <ul class="carousel-img w-full h-auto mt-14">
+                    <li class="slide"><img src="https://www.collegebatch.com/static/clg-gallery/rns-institute-of-technology-bangalore-214629.jpg"
+                        alt="img-1"></li>
+                        <li class="slide">
+                            <img src="./images/img1.jpeg"
+                            alt="cse-img">
+                        </li>
+                        <li class="slide">
+                            <img src="images\img2.jpg" alt="">
+                        </li>
+                        <li class="slide"> 
+                            <img src="./images/img4.jpg"
+                             alt="img-3"></li>
+                        <li>
+                            <img src="https://www.collegebatch.com/static/clg-gallery/rns-institute-of-technology-bangalore-214630.jpg"
+                            alt="img-4">
+                        </li>
+                
+                        <li class="slide">
+                        <img src="https://www.rnsit.ac.in/wp-content/themes/twentyseventeen/MCA/images/About-the-department.jpg" 
+                        alt="img-6">
+                    </li>
+                 </ul>
+            </div>
+        </section>
+        <!-- about section -->
+        <div class="about-container text-center w-8/12 ml-60 rounded-xl bg-[#e7929d] text-[#242944] p-8">
+            <h1 class="font-bold  text-3xl">About the Department</h1>
+            <p class="desc-of-depart pt-6 text-md leading-7 font-semibold">
+                The department of Computer Science & Engineering (CSE) @ RNSIT is a place where academic excellence & innovation converge. The department has been proudly shaping future engineers for over 22 years providing quality education, cutting-edge research opportunities and a strong foundation for successful careers. The department holds the distinguished NBA accreditation, a testament to our commitment to state-of-the-art labs, industry partnership ensures holistic learning experience. The department currently offers an Undergraduate program [estd.2001] with intake of 240 and VTU recognized R&D center [estd.2009]. R&D CSE currently has 18 scholars pursuing their research and 21 scholars have been awarded the degree so far. The department has constituted Center of Excellence in Machine Learning, FitterLife and Agile Labs to progress itself to the rapid advancements in various specialized fields. The department has conducted 35+ FDPs, 3 International Conferences, 2 National conferences and over 250 invited talks for the benefit of faculties and students.
+                The department is striving hard in realizing the vision of the institution by accomplishing the vision of the department by promoting excellence in teaching and covering the fundamentals of computer science.
+            </p>
+        </div>
+        
+        <!-- HOD Message -->
+        <div>
+            <h2 class="text-3xl text-white mt-20 text-center pb-4">HOD'S Message</h2>
+            <hr class="pt-7 ml-48 mr-40 text-white transition-all ease-in duration-500">
+            <div class="grid grid-cols-2 gap-0">
+                <img src="https://www.rnsit.ac.in/wp-content/uploads/2021/12/Dr.-Kiran-HOD.jpg"
+                 alt="hod-img" class="rounded-lg ml-48 w-80">
+                
+                    <p class="text-white font-normal border-2 text-center
+                     p-5 border-[#e7929d] text-md h-96 mr-52 w-10/12
+                     text-lg leading-6 tracking-widest font-sans mb-3 rounded-xl">
+                        Computer Science and Engineering is a prerequisite for current world.
+                         Hallmark of CSE Department is its consistent academic, research and 
+                         placement performance. Range of activity-based learning is initiated 
+                         to bridge the gap between academics and industry. We have inculcated
+                          project-based learning to enhance hypothetical knowledge with 
+                          pragmatic experience. Our distinguished faculty have modeled the
+                           teaching learning process with academic excellence, dedication,
+                            and hard work. Alumni have been recognized for their diligent
+                             and accepted in their roles in the industry.
+                            With this we are sure as a team we will achieve the vision of 
+                            the department.
+                       <span class="text-xl leading-9 font-semibold  p-2 rounded-md text-[#242944] bg-[#e7929d]">DR. P KIRAN</span> </p>
+                 
+            </div>
+        </div>
+        
+           
+    
+          
+          
 
         <script src="index.js"></script>
 </body>
