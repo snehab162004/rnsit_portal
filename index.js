@@ -39,3 +39,19 @@ nextButton.addEventListener('click', () => {
 });
 
 updateSlide();
+
+// form validation
+
+const studUsn = document.getElementById("usn").value;
+const studEmail = document.getElementById("email").value;
+
+const usnFormat = /^\d{1}[a-zA -Z]{2}\d{2}[a-zA-Z]{2}\d{3}$/;
+const emailFormat = /^\d{1}[a-zA-Z]{2}\d{2}[a-zA-Z]{2}\d{3}\.[a-zA-Z]+@rnsit\.ac\.in$/
+
+if(!usnFormat.test(studUsn)) {
+ alert('Usn Format is incorrect') 
+} 
+
+if(!emailFormat.test(studEmail)) {
+    alert('Email Format is incorrect') 
+   } 
