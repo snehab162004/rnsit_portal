@@ -11,14 +11,16 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="overflow-x-hidden">
-    <header class="sm:text-sm sm:leading-5 text-4xl">
+    <header class="text-sm leading-5">
         RNSIT 5th SEM STUDENTS IA MARKS PORTAL
     </header>
 
-        <nav class="bg-white h-24 shadow p-4 md:flex md:justify-between md:items-center w-full">
+        <nav class="bg-white h-24 shadow p-4 md:flex md:justify-between md:items-center
+         w-full">
             <div class="logo sm:ml-2.5 flex justify-between items-center">
                 <span class="text-2xl cursor-pointer font-semibold text-[#242944]">
-                <img src="./images/rnsit_logo.jpeg" alt="rnsit_logo" class="sm:h-13 h-20 w-21 inline">
+                <img src="./images/rnsit_logo.jpeg" alt="rnsit_logo"
+                 class="sm:h-13 h-20 w-21 inline">
                 RNSIT
             </span>
             <span class="text-3xl cursor-pointer md:hidden block mx-2">
@@ -53,10 +55,12 @@
                 <button class="carousel-button prev"><</button>
                 <button class="carousel-button next">></button>
                 <ul class="carousel-img w-full h-auto mt-14">
-                    <li class="slide"><img src="https://www.collegebatch.com/static/clg-gallery/rns-institute-of-technology-bangalore-214629.jpg"
+                    <li class="slide">
+                        <img src="https://www.collegebatch.com/static/clg-gallery/rns-institute-of-technology-bangalore-214629.jpg"
                         alt="img-1"></li>
                         <li class="slide">
                             <img src="./images/img1 (1).jpg"
+
                             alt="cse-img">
                         </li>
                         <li class="slide">
@@ -78,12 +82,12 @@
             </div>
         </section>
         <!-- about section -->
-        <div class="about-container text-center w-8/12 ml-60 rounded-xl 
-        bg-[#e7929d] text-[#232843] p-8 sm:m-14 sm:h-3/5 sm:w-auto">
-            <h1 class="font-bold  text-3xl sm:text-xl">
+        <div class="about-container text-center md:w-8/12 md:ml-60 rounded-xl 
+        bg-[#e7929d] text-[#232843] p-8 m-14 h-3/5 w-auto">
+            <h1 class="font-bold  md:text-3xl text-2xl">
                 About the Department</h1>
-            <p class="desc-of-depart pt-6 text-md leading-7
-             font-semibold sm:leading-6 sm:text-sm">
+            <p class="desc-of-depart pt-6 md:text-md md:leading-7
+             font-semibold leading-6 text-sm">
                 The department of Computer Science & Engineering (CSE) @ RNSIT is a place where academic excellence & innovation converge. The department has been proudly shaping future engineers for over 22 years providing quality education, cutting-edge research opportunities and a strong foundation for successful careers. The department holds the distinguished NBA accreditation, a testament to our commitment to state-of-the-art labs, industry partnership ensures holistic learning experience. The department currently offers an Undergraduate program [estd.2001] with intake of 240 and VTU recognized R&D center [estd.2009]. R&D CSE currently has 18 scholars pursuing their research and 21 scholars have been awarded the degree so far. The department has constituted Center of Excellence in Machine Learning, FitterLife and Agile Labs to progress itself to the rapid advancements in various specialized fields. The department has conducted 35+ FDPs, 3 International Conferences, 2 National conferences and over 250 invited talks for the benefit of faculties and students.
                 The department is striving hard in realizing the vision of the institution by accomplishing the vision of the department by promoting excellence in teaching and covering the fundamentals of computer science.
             </p>
@@ -91,7 +95,7 @@
         
         <!-- HOD Message -->
         <div>
-            <h2 class="text-3xl text-white mt-20 text-center pb-4 sm:ml-10">
+            <h2 class="text-3xl text-white md:mt-20 text-center md:pb-4 ml-10">
                 HOD'S Message</h2>
             <hr class="pt-7 ml-48 mr-40 text-white transition-all ease-in duration-500">
             <div class="grid grid-cols-2 gap-0 sm:block">
@@ -153,10 +157,11 @@
                 rounded-md w-[60%] focus:outline-none focus:border-[#e7929d] focus:ring
                 hover:border-[#e7929d] appearance-none sm:ml-20 sm:w-[85%]" rows="4" required></textarea>
                 <br>
-                <button  type="submit" class="bg-[#e7929d] border-[#e7929d] text-[#242944] p-3 rounded-md mb-4 mt-9 mr-[630px]
+                <button  type="submit" id="btn" 
+                class="bg-[#e7929d] border-[#e7929d] text-[#242944] p-3 rounded-md mb-4 mt-9 mr-[630px]
                 font-bold text-md hover:bg-transparent hover:border-[#e7929d] hover:text-white
                 focus:border-[#e7929d] border-2 sm:mb-3 sm:mt-7 sm:mr-[0px] ">
-                <a href="#">
+                
                     Send Message</button></a>
             </form>
 
