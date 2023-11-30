@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Page</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body  class="bg-[#232843]">
+    <nav class="bg-white h-24 shadow p-4 md:flex md:justify-between md:items-center
+         w-full">
+            <div class="logo sm:ml-2.5 flex justify-between items-center">
+                <span class="text-2xl cursor-pointer font-semibold text-[#242944]">
+                <img src="/images/rnsit_logo.jpeg" alt="rnsit-logo"
+                 class="sm:h-13 h-20 w-21 inline">
+                RNSIT
+            </span>
+            <span class="text-3xl cursor-pointer md:hidden block mx-2">
+                <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+            </span>
+           </div>
+                <ul class="font-semibold md:flex md:items-center z-[-1] md:z-auto md:static absolute
+                 left-0 md:auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 
+                transition-all ease-in duration-500 bg-white">  
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="text-xl hover:underline duration-500">
+                                Home</a>
+                        </li>
+                            <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="text-xl hover:underline duration-500">
+                                Faculty DashBoard</a></li>
+                           <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="text-xl hover:underline duration-500">
+                                Student Login</a>
+                           </li> 
+                           <li class="mx-4 my-6 md:my-0">
+                             <a href="#" class="text-xl hover:underline transition-all ease-in-out out duration-50">
+                                Help</a>
+                        </li>
+                    </ul>
+            </div>
+            </div>
+        
+        </nav>
+        <div>
+            <h1 class="text-[#e7929d] text-center text-3xl pt-11 italic font-semibold">
+                Faculty Dashboard
+            </h1>
+            <div class="pt-11 w-[90%] pl-10 grid grid-cols-2">
+                <div class="rounded-tl-3xl rounded-tr-3xl shadow-2xl bg-white items-center">
+                    <div class="flex justify-center pt-7">
+                        <img src="https://www.rnsit.ac.in/wp-content/uploads/2021/12/Dr.-Kiran-HOD.jpg" 
+                             alt="cse-hod-img"
+                             class="rounded-tl-3xl rounded-tr-3xl w-[70%] object-cover mb-6">
+                    </div>
+                    <span class="text-[#242944] font-extrabold ml-[95px] text-lg">Dr. Kiran P<br>
+                    <span class="text-[#242944] font-semibold ml-[95px]">Prof. & HOD</span><br>
+                    <button class="ml-[95px] bg-[#242944] text-white p-2 mb-7 mt-3
+                     rounded-md w-[90px] hover:bg-transparent hover:text-[#242944] 
+                     hover:border-[#242944] border-2 ease-in-out duration-200" 
+                    type="button">
+                        Login</button>
+                </div>
+            </div>
+        </div>
+        
+
+            <script src="/src/pages/faculty-page/faculty.js"></script>
+</body>
+</html>
